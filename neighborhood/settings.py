@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'watch',
     'pyuploadcare.dj',
 ]
-
+UPLOADCARE = {
+    'pub_key': '222e6bc0de9035cfb2c1',
+    'secret': '6499d4847db1a424a786',
+}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
