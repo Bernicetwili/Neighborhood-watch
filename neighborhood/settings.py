@@ -25,11 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = DEBUG = config('DEBUG', default=False, cast=bool)
 MODE = config('MODE')
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS=['*']
 
 # Application definition
 
@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'watch',
-    'rest_framework',
     'crispy_forms',
     'pyuploadcare.dj',
 ]
@@ -49,6 +48,10 @@ UPLOADCARE = {
     'pub_key': '222e6bc0de9035cfb2c1',
     'secret': '6499d4847db1a424a786',
 }
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -157,6 +160,7 @@ MEDIA_URL = '/media/'
 LOGIN_REDIRECT_URL = 'index'
 
 LOGOUT_REDIRECT_URL = 'index'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

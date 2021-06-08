@@ -20,9 +20,9 @@
                                 {{ hood.hood_post.count }}</strong> Post{{ hood.hood_post.count|pluralize }}
                             </h6>
                             <p class="card-text">{{hood.description}}</p>
-                            <p class="card-text"><span class="text-info">Police Tell</span>
+                            <p class="card-text"><span class="text-info">Police Number</span>
                                 &nbsp;<strong>{{hood.police_number}}</strong> |
-                                <span class="text-info">Hospital Tell</span> <strong>{{hood.health_tell}}</strong></p>
+                                <span class="text-info">Hospital Number</span> <strong>{{hood.health_tell}}</strong></p>
                             <p class="card-text">Administrator: <small class="text-muted">
                                 {{ hood.admin.user.username }}</small></p>
                         </div>
@@ -55,7 +55,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{bus.name}}
                                 </h5>
-                                <p class="card-text">{{bus.email}}</p>
+                                <p class="card-text">{{bus.contat}}</p>
                                 <p class="card-text">{{bus.description}}</p>
                                 <p class="card-text">Owner: <small class="text-muted">
                                     {{ bus.user.user.username|title }}</small></p>
