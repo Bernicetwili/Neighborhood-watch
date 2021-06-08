@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = DEBUG = config('DEBUG', default=False, cast=bool)
 MODE = config('MODE')
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'watch',
     'rest_framework',
+    'crispy_forms',
     'pyuploadcare.dj',
 ]
 UPLOADCARE = {
